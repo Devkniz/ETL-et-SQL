@@ -1,4 +1,4 @@
-```markdown
+
 # Clinical Data ETL Pipeline - Projet Sanofi
 
 Un pipeline ETL (Extract-Transform-Load) pour nettoyer et stocker des données cliniques dans une base SQLite.
@@ -18,26 +18,23 @@ Un pipeline ETL (Extract-Transform-Load) pour nettoyer et stocker des données c
 
 - Python 3.10+
 - Bibliothèques :
-  ```bash
   pandas == 2.1.4
   sqlalchemy == 2.0.25
-  ```
+  
 
 ## 🚀 Installation
 
 1. Cloner le dépôt :
-   ```bash
    git clone git@github.com:Devkniz/ETL-et-SQL.git
-   ```
+   
 
 2. Installer les dépendances :
-   ```bash
    pip install -r requirements.txt
-   ```
+   
 
 ## 📂 Structure du Projet
 
-```
+
 projet-sanofi/
 ├── data/
 │   ├── Data Sample for Sanofi(Feuil1).csv  # Fichier source original
@@ -51,17 +48,16 @@ projet-sanofi/
 │   └── pipeline.py                        # Script principal
 ├── README.md
 └── requirements.txt
-```
+
 
 ## 🖥️ Utilisation
 
-Exécuter le pipeline complet :
-```bash
+Exécuter le pipeline complet 
 python src/pipeline.py
-```
+
 
 **Sortie attendue :**
-```
+
 Démarrage de l'extraction...
 📥 Fichier brut généré : data/clinical_data.csv
 Extraction réussie !
@@ -72,7 +68,7 @@ Transformation réussie !
 
 Chargement des données...
 💾 Base SQLite mise à jour : data/clinical_data.db
-```
+
 
 ## 🔄 Processus ETL
 
@@ -84,10 +80,10 @@ Chargement des données...
 ### 2. Transformation (`transform.py`)
 - Filtre les lignes sans erreurs
 - Convertit les dates au format `YYYY-MM-DD`
-```python
+python
 # Exemple de conversion de date
 "15/07/2023" ➔ "2023-07-15"
-```
+
 
 ### 3. Chargement (`load.py`)
 - Crée une base SQLite si inexistante
@@ -104,8 +100,7 @@ Chargement des données...
 
 ## 🛠️ Développement
 
-Pour exécuter les étapes individuellement :
-```bash
+Pour exécuter les étapes individuellement 
 # Extraction seule
 python src/extract.py
 
@@ -114,7 +109,7 @@ python src/transform.py
 
 # Chargement manuel
 python src/load.py
-```
+
 
 ## 📈 Améliorations Futures
 
@@ -139,5 +134,5 @@ Distribué sous licence MIT. Voir `LICENSE` pour plus d'informations.
 ---
 
 **Développé par Terence NDONGO** - *Science des Données Médicales*
-```
+
 
