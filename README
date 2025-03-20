@@ -1,4 +1,3 @@
-
 # Clinical Data ETL Pipeline - Projet Sanofi
 
 Un pipeline ETL (Extract-Transform-Load) pour nettoyer et stocker des données cliniques dans une base SQLite.
