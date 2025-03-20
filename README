@@ -1,4 +1,3 @@
-
 # Clinical Data ETL Pipeline - Projet Sanofi
 
 Un pipeline ETL (Extract-Transform-Load) pour nettoyer et stocker des données cliniques dans une base SQLite.
@@ -18,18 +17,18 @@ Un pipeline ETL (Extract-Transform-Load) pour nettoyer et stocker des données c
 
 - Python 3.10+
 - Bibliothèques :
-  pandas == 2.1.4
-  sqlalchemy == 2.0.25
-  
+  ```shell
+  pandas==2.1.4
+  sqlalchemy==2.0.25
 
+  
 ## 🚀 Installation
 
 1. Cloner le dépôt :
-   git clone git@github.com:Devkniz/ETL-et-SQL.git
-   
+git clone git@github.com:Devkniz/ETL-et-SQL.git
 
 2. Installer les dépendances :
-   pip install -r requirements.txt
+pip install -r requirements.txt
    
 
 ## 📂 Structure du Projet
@@ -48,6 +47,7 @@ projet-sanofi/
 │   └── pipeline.py                        # Script principal
 ├── README.md
 └── requirements.txt
+
 
 
 ## 🖥️ Utilisation
@@ -80,7 +80,6 @@ Chargement des données...
 ### 2. Transformation (`transform.py`)
 - Filtre les lignes sans erreurs
 - Convertit les dates au format `YYYY-MM-DD`
-python
 # Exemple de conversion de date
 "15/07/2023" ➔ "2023-07-15"
 
@@ -92,15 +91,14 @@ python
 
 ## ✅ Validation des Données
 
-| Étape         | Vérification                     | Outil               |
-|---------------|-----------------------------------|---------------------|
-| Extraction    | Formattage CSV cohérent          | pandas.read_csv     |
-| Transformation| Dates converties & erreurs filtrées | pd.to_datetime   |
-| Chargement    | Correspondance des lignes         | SQLite Browser      |
+| Étape         | Vérification                        | Outil               |
+|---------------|-------------------------------------|---------------------|
+| Extraction    | Formattage CSV cohérent             | pandas.read_csv     |
+| Transformation| Dates converties & erreurs filtrées | pd.to_datetime      |
+| Chargement    | Correspondance des lignes           | SQLite Browser      |
 
 ## 🛠️ Développement
 
-Pour exécuter les étapes individuellement 
 # Extraction seule
 python src/extract.py
 
@@ -109,6 +107,7 @@ python src/transform.py
 
 # Chargement manuel
 python src/load.py
+
 
 
 ## 📈 Améliorations Futures
@@ -122,9 +121,12 @@ python src/load.py
 
 Les contributions sont les bienvenues !  
 1. Forker le projet  
-2. Créer une branche (`git checkout -b feature/AmazingFeature`)  
-3. Commiter vos changements (`git commit -m 'Add some AmazingFeature'`)  
-4. Pousser vers la branche (`git push origin feature/AmazingFeature`)  
+2. Créer une branche:
+git checkout -b feature/AmazingFeature
+3. Commiter vos changements:
+git commit -m "Add some AmazingFeature"
+4. Pousser vers la branche:
+git push origin feature/AmazingFeature
 5. Ouvrir une Pull Request
 
 ## 📄 Licence
