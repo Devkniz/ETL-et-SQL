@@ -1,0 +1,11 @@
+patient_id,treatment_date,result,errors
+1,01/02/2022,Positif,
+2,05/02/2022,Négatif,Erreur de saisie
+3,10/02/2022,Positif,Problème d'échantillonnage
+4,15/02/2022,Négatif,
+5,20/02/2022,Positif,Erreur de lecture
+6,25/02/2022,Négatif,Problème de matériel
+7,28/02/2022,Positif,
+8,15/03/2022,Négatif,Erreur de calcul
+9,17/02/2022,Positif,Problème de calibration
+10,21/02/2022,Négatif,

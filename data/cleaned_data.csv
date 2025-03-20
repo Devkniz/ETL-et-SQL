@@ -1,0 +1,5 @@
+patient_id,treatment_date,result,errors
+1,2022-02-01,Positif,
+4,2022-02-15,Négatif,
+7,2022-02-28,Positif,
+10,2022-02-21,Négatif,
