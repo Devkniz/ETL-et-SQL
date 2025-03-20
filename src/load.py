@@ -19,7 +19,7 @@ def load_data():
         # 3. Connexion à SQLite (crée le .db si inexistant)  
         db_path = Path("data/clinical_data.db")  
         engine = create_engine(f'sqlite:///{db_path}')  
-        print(f"🔌 Connexion à la base SQLite : {db_path}")  
+        print(f"🔌 Connexion à la base SQLite : {db_path.resolve()}")  
 
         # 4. Exporte les données  
         df.to_sql('patients', engine, if_exists='replace', index=False)  

@@ -18,7 +18,7 @@ def main():
         print("Transformation réussie ! Données prêtes pour SQLite.")
 
         # Etape 3: Chargement
-        print("Chargement des données...")
+        print("\nChargement des données...")
         load_data()
         print("Chargement terminé ! Base de données mise à jour.\n")
 
